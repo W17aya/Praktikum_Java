@@ -1,9 +1,31 @@
 package Model;
- class Mahasiswa {
+ public class Mahasiswa {
     private int id;
     private String NPM;
     private String nama;
     private double IPK;
+
+    public Mahasiswa() {
+    }
+
+    public Mahasiswa(int id, String NPM, String nama, double IPK) {
+        this.id = id;
+        this.NPM = NPM;
+        this.nama = nama;
+        this.IPK = IPK;
+    }
+
+    
+    
+    public void viewData(){
+        System.out.println("================== View Data   ===============");
+        System.out.println("ID \t: "+id);
+        System.out.println("NPM \t: "+NPM);
+        System.out.println("Nama \t: "+nama);
+        System.out.println("IPK  \t: "+IPK);
+        System.out.println("=================== View Data  ================");
+        System.out.println(==);
+    }
     
     public void mendaftarUlang(){
         System.out.println("Mahasiswa mendaftar ulang");
